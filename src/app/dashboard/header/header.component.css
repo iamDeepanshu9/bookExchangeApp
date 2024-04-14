@@ -1,0 +1,34 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px; /* Adjust as needed */
+}
+
+.logo-container img {
+  max-height: 100px; /* Adjust as needed */
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  padding-right: 16px; /* Adjust as needed */
+  justify-content: end;
+}
+
+.navigation-links a {
+  margin-left: 16px; /* Adjust as needed */
+  color: white;
+  text-decoration: none;
+}
+
+.custom-toolbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

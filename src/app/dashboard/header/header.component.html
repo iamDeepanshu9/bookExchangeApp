@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+    <!-- Logo on the left -->
+    <div class="logo-container">
+      <h1 >Welcome {{userName}}</h1>
+    </div>
+
+    <div>
+      <h1 style="text-align: center;"  routerLink="/dashboard" >Book Exchange Program</h1>
+    </div>
+
+    <!-- Navigation links on the right -->
+    <div class="navigation-links">
+      <a mat-button  (click)="navigateToMyBooks()" matTooltip="My Books"><mat-icon>library_books</mat-icon></a>
+      <a mat-button (click)="logout()" matTooltip="logout" class="nav-button"><mat-icon>logout</mat-icon></a>
+    </div>
+</mat-toolbar>
+

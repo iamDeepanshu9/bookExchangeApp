@@ -1,0 +1,61 @@
+.exchange-container {
+    padding: 20px;
+    background-color: white;
+    min-height: calc(100vh - 104px);
+  }
+  
+  .mat-form-field {
+    width: 250px;
+  }
+/*   
+  .mat-form-field.mat-focused .mat-form-field-label {
+ 
+  }
+  
+  .mat-form-field.mat-focused .mat-form-field-ripple {
+
+  }
+  
+  .mat-form-field-label,
+  .mat-option-text {
+  
+  } */
+  
+  .selection-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .book-detail-card {
+    margin-top: 10px;
+    width: 250px;
+    background-color: #1a1a1a; /* Very dark grey, nearly black */
+    color: #fff;
+    position: absolute;
+    top: 70px;
+  }
+
+  .dropdown-area{
+    margin-top: 120px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  button {
+    background-color: #4a4a4a; /* Dark grey button */
+    margin-bottom: 20px;
+  }
+  
+  button:disabled {
+    color: #777; /* Lighter grey when disabled */
+    background-color: #333; /* Darker grey when disabled */
+  }
+  
+  /* .mat-card-title, .mat-card-content p {
+   
+  } */
+  

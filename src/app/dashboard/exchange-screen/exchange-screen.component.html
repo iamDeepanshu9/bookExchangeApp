@@ -1,0 +1,50 @@
+<div class="exchange-container">
+    <div class="dropdown-area">
+    <div class="selection-area">
+      <mat-form-field appearance="fill">
+        <mat-label>Your Books</mat-label>
+        <mat-select [(value)]="selectedUserBook" (selectionChange)="onBookSelect()">
+          <mat-option *ngFor="let book of userBooks" [value]="book">
+            {{ book.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-card *ngIf="selectedUserBook" class="book-detail-card">
+        <mat-card-header>
+          <mat-card-title>{{ selectedUserBook.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Author: {{ selectedUserBook.author }}</p>
+          <p>Description: {{ selectedUserBook.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+    <button mat-raised-button color="accent" [disabled]="!canExchange()" (click)="exchangeBooks()">
+      Exchange
+    </button>
+  
+    <div class="selection-area">
+      <mat-form-field appearance="fill">
+        <mat-label>Available Books</mat-label>
+        <mat-select [(value)]="selectedOtherBook" (selectionChange)="onBookSelect()">
+          <mat-option *ngFor="let book of otherBooks" [value]="book">
+            {{ book.title }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-card *ngIf="selectedOtherBook" class="book-detail-card">
+        <mat-card-header>
+          <mat-card-title>{{ selectedOtherBook.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Author: {{ selectedOtherBook.author }}</p>
+          <p>Description: {{ selectedOtherBook.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>
+  </div>
+  
