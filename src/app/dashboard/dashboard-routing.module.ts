@@ -11,10 +11,6 @@ const routes: Routes = [
     component: DashboardComponent,
     children:[
       {
-        path:'my-books',
-        component: MyBooksComponent,
-      },
-      {
         path:'',
         component: ExchangeScreenComponent,
       }

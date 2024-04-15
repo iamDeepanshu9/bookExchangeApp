@@ -59,8 +59,6 @@ export class LoginComponent implements OnInit {
         console.log(res);
         if (res) {
           this.authService.login();
-          this.authService.setIsTeacher(res?.isTeacher);
-          this.apiHandleService.setUser$(res);
           this.router.navigate(['/', 'dashboard'], {
             replaceUrl: true,
           })
